@@ -302,7 +302,7 @@ footer > img {
   color: var(--Dark-Grayish-Blue);
 }
 
-.footer-navigation > a:hover {
+.footer-navigation > a :hover {
   cursor: pointer;
   color: var(--Strong-Cyan);
 }
@@ -337,4 +337,40 @@ svg:hover {
 }
 svg:hover {
     cursor: pointer;
+}
+
+/* Media quries for minimum screen 1040px */
+
+@media all and (min-width:1040px){
+    header  {
+        background-image: url(./images/bg-header-desktop.png), url(./images/logo.svg);
+        min-height: 19rem;
+    }
+
+    .intro > h1 {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+        font-weight: 600;
+    }
+
+    .intro > p {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+    }
+
+    .intro-btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-btns > a {
+        min-width: 15vw;
+        min-height: 3.5rem;
+    }
+
 }
