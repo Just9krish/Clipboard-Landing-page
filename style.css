@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
 :root {
+  /* Colors */
+
   /* Primary */
 
   --Strong-Cyan: hsl(171, 66%, 44%);
@@ -11,6 +13,8 @@
   --Dark-Grayish-Blue: hsl(210, 10%, 33%);
   --Grayish-Blue: hsl(201, 11%, 66%);
 }
+
+/* Typography */
 
 * {
   padding: 0;
@@ -43,6 +47,7 @@ p {
 body {
   min-height: 100vh;
 }
+/* Mobile first designing */
 
 header {
   background-image: url(./images/bg-header-mobile.png), url(./images/logo.svg);
@@ -318,59 +323,221 @@ footer > img {
 }
 
 #facebook-svg:hover {
-    fill: var(--Strong-Cyan);
-    
+  fill: var(--Strong-Cyan);
 }
 #twitter-svg:hover {
-    fill: var(--Strong-Cyan);
-    
+  fill: var(--Strong-Cyan);
 }
 #instagram-svg:hover {
-    fill: var(--Strong-Cyan);
+  fill: var(--Strong-Cyan);
 }
 
 svg:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 svg:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 svg:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Media quries for minimum screen 1040px */
 
-@media all and (min-width:1040px){
-    header  {
-        background-image: url(./images/bg-header-desktop.png), url(./images/logo.svg);
-        min-height: 19rem;
-    }
+@media all and (min-width: 1120px) {
 
-    .intro > h1 {
-        font-size: 2.8rem;
-        line-height: 3.5rem;
-        font-weight: 600;
-    }
+  /* Background image */
+  header {
+    background-image: url(./images/bg-header-desktop.png),
+      url(./images/logo.svg);
+    min-height: 19rem;
+  }
 
-    .intro > p {
-        width: 45%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.25rem;
-        line-height: 1.8rem;
-    }
+  /* Site intro section  */
+  .intro > h1 {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+  }
 
-    .intro-btns {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+  .intro > p {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+  }
 
-    .intro-btns > a {
-        min-width: 15vw;
-        min-height: 3.5rem;
-    }
+  .intro-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .intro-btns > a {
+    min-width: 15vw;
+    min-height: 3.5rem;
+  }
+
+  /* .intro-download-ios {
+    align-self: flex-end;
+  } */
+
+  /* First feature section */
+  .first-feature-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .first-feature-section > img {
+    position: relative;
+    right: 10%;
+  }
+
+  .first-feature-intro {
+    grid-column: 1 / span 2;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .first-feature-intro > h2 {
+    font-size: 2.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .first-feature-intro > p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    width: 60%;
+    margin: auto;
+  }
+
+  .first-feature-sub-feature {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    text-align: start;
+  }
+
+  .first-feature-sub-feature > h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  /* second feature section */
+  .second-feature-section {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .second-feature-section > h2 {
+    font-size: 2.2rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+  }
+
+  .second-feature-section > p {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+  }
+
+  /* Third feature */
+  .third-feature-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .third-feature-intro {
+    grid-column: span 3;
+  }
+
+  .third-feature-intro > h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .third-feature-intro > p {
+    margin-bottom: 4.5rem;
+  }
+
+  .third-feature-intro > h3 {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+
+  .tools > p {
+    width: 75%;
+  }
+
+  /* Company logos */
+  .company-logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
+
+  /* Platform */
+  .platform > h2 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+  }
+
+  .platform > p {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .platform-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .platform-btns > a {
+    min-width: 2.5rem;
+    width: 15vw;
+  }
+
+  /* Footer section */
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    margin: auto;
+    text-align: start;
+  }
+
+  .footer-navigation {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* Social links */
+  .socials {
+    margin-left: 11rem;
+  }
+
+  /* Attribution section */
+  .attribution {
+    position: absolute;
+    top: 100%;
+  }
+
+  .attribution > a {
+    text-decoration: none;
+  }
+
+  .attribution > a:hover {
+    text-decoration: underline;
+  }
 }
