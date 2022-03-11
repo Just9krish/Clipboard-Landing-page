@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/Just9krish/Clipboard-Landing-page/blob/a3f81e96b80596d79deaa1ae62fa739eb624e7cb/design/desktop-design.jpg)
 
 ### Links
 
-- Solution URL: [Click here](https://your-solution-url.com)
+- Solution URL: [Click here](https://github.com/Just9krish/Clipboard-Landing-page)
 - Live Site URL: [Click here](https://your-live-site-url.com)
 
 ## My process
@@ -60,7 +60,7 @@ I learned how to use it to create a responsive grid layout. I am definitely gonn
 ```
 ### Continued development
 
-I will continue to learn more about CSS Grid and how it can be used to create a more complex layout
+I will continue to learn more about CSS Grid and how it can be used to create a more complex layout.
 
 ## Author
 
