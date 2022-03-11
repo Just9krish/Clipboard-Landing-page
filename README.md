@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://github.com/Just9krish/Clipboard-Landing-page)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/clipboardlandingpagebyjust9krish-lYazGTWJU)
+- Live Site URL: [Click here](https://clipboard-landing-page-by-just9krish.netlify.app/)
 
 ## My process
 
